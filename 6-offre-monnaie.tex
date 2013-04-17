@@ -174,7 +174,7 @@ On a l'offre de monnaie $M$ = billet et pièces $C$ + objets à vue bancaire $D$
 	
 	
 	\begin{tabular}{c|c}
-	Actif (C) & Passif (C) \\ 
+	Actif (BC) & Passif (BC) \\ 
 	\hline 
 	X, 500 & Billets, 240 \\ 
 	Refinancement, 100 & Réserves, 360 \\
@@ -185,7 +185,7 @@ On a l'offre de monnaie $M$ = billet et pièces $C$ + objets à vue bancaire $D$
 	Supposons que la BC émette davantage de billets en circulation.
 	
 	\begin{tabular}{c|c}
-	Actif (C) & Passif (C) \\ 
+	Actif (C) & Passif (BC) \\ 
 	\hline 
 	X, + 100 & Billets, +100 
 	\end{tabular}
@@ -195,9 +195,125 @@ On a l'offre de monnaie $M$ = billet et pièces $C$ + objets à vue bancaire $D$
 	Si l'économie connaît un déficit de la balance courante (c'est-à-dire importation $>$ exportation), il y a un achat de devises auprès de la BC.
 	
 	\begin{tabular}{c|c}
-	Actif (C) & Passif (C) \\ 
+	Actif (C) & Passif (BC) \\ 
 	\hline 
 	X, -100 & Billets, -100
 	\end{tabular}
 	
 	Tant que les importations sont $>$ exportations, il y a une diminution des réserves de devises.
+	
+	% 17 / 4 / 2013
+	
+	Supposons que les 640 de la banque B sont déposés à la banque C.
+	
+	\begin{tabular}{c|c}
+	Actif & Passif \\ 
+	\hline 
+	Réserves, 128 & Dépôt, 640 (D3) \\ 
+	Crédits, 512 &  
+	\end{tabular} 
+	
+	La création monétaire de la banque C est de 512 euros.
+	
+	NB : les réserves sont toujours positives, car il faut faire face à des demandes de retrait des clients.
+	
+	$$M = D1 + D2 + D2 + \dots$$
+	
+	On peut observer que la création monétaire est de plus en plus réduites, donc le processus n'est pas illimité. Peut-on calculer le montant de la création monétaire à partir d'une masse monétaire initiale de 1000 ?
+	
+	$M_{\text{initiale}}$ = 1000 (sous forme de dépôt), $rr$ (taux de réserve) = $\frac{\text{Réserves}}{\text{Dépôts}} = 20\%$.
+	
+	$$M = D1 + \underbrace{(1 - rr) D1}_{\text{création monétaire banque A}} + (1 - rr) D1 + (1 - rr) D3 + \dots$$
+		
+	C'est une série géométrique de la forme $1 + x + x^2 + \dots$. Si $\vert x \vert < 1$, alors $1 + x + x2 + \dots = \frac{1}{1 - x}$. $x = (1 - rr)$, donc $M = \frac{1}{rr} D1$.
+	
+	Au maximum, $M = \frac{1}{0.2} 1000 = 5000$, donc la création monétaire maximale est de 4000 pour un montant initial de 1000.
+	
+	$$\lim_{rr \rightarrow 0} M = + \infty$$
+	$$\lim_{rr \rightarrow 1} M = D1$$
+	
+	Cette limite de création n'arrange pas les banques car les crédits qu'elles peuvent délivrer sont limités. Elles ont mis en place la titrisation pour dépasser cette limite.
+	
+	La création de monnaie n'est pas une création de richesse, mais de liquidités.
+	
+	\subsection{Petit modèle de création monétaire}
+	
+	[schéma]
+	
+	Demande de monnaie : $ M^d = P. L (Y, i)$ (L fonction de demande de liquidité). Si $Y$ est constant, $M = P.Y.L(i)$
+	
+	Demande d'espèce : $E^d = c M^d$, $c$ est la part de la demande de monnaie sous forme d'espèce.
+	
+	Demande de dépôt à vue : $D^d = (1 - c) M^d$
+	
+	Il y aura une demande de réserves de la part de banque commerciale : $R^d = \Theta D$, $\Theta$ étant le taux de réserve. Vu la troisième équation, c'est équivalent à $R^d = (1 - c)\Theta M^d$.
+	
+	NB : avec petite lettre c'est une fonction, sans lettre c'est le niveau d'équilibre.
+	
+	La demande de monnaie BC :
+	
+	$$\underbrace{E^d + R^d}_{\text{demande de monnaie BC}} = \underbrace{H}_{\text{offre de monnaie BC}}$$
+	
+	Donc
+	
+	$$H = c M^D + (1 - c) \Theta M^d) = (c + (1 - c) \Theta) P . Y . L(i)$$
+	
+	Si $c = 1$, $E^d = M^d$ et $H = P . Y . L(i)$, l'ensemble de la monnaie est détenue sous forme de billets ; l'offre de monnaie est entièrement contrôlée par la BC.
+	
+	Si $c = 0$, on n'a pas de billets ($E^d = 0$), tout est détenu sous forme de dépôts : $D^d = P.Y.L(i)$ et $H = \Theta . P . Y . L(i)$.
+	
+	Le cas général est $0 < c < 1$. La demande de monnaie BC est moins élevée que la demande de monnaie.
+	
+	\subsubsection{Le marché des réserves}
+	
+	$$H = E^d + R^d \Leftrightarrow \underbrace{H - E^d}_{\text{offre de réserve}} = \underbrace{R^d}_{\text{demande de réserves}}$$
+	
+	En zone euro le taux d'intérêt de ce marché est l'EONIA, aux EU c'est le Fed Funds rate. Chaque fois que l'EONIA (moyenne des taux d'intérêt des transactions d'un jour) s'écarte du taux d'intérêt directeur, la BC intervient (injection de liquidités). C'était un marché très liquide jusqu'en 2007.
+	
+	[graphique]
+	
+	\subsubsection{Le marché interbancaire}
+	
+	La BC intervient par une politique d'open market.
+	
+	[schéma]
+	
+	\subsubsection{Offre et la demande de monnaie et le multiplicateur monétaire}
+	
+	On sait que l'offre de monnaie BC est $H = (C + ( 1 - c) \Theta) P Y . L(i)$. On a que $\underbrace{H \underbrace{\frac{1}{(c + ( 1  - c) \Theta)}_{\text{multiplicateur monétaire} > 1}}}_{\text{offre de monnaie}} = \underbrace{P . Y . L(i)}_{\text{demande de monnaie}}$. Cela signifie que l'offre de monnaie est un multiple de l'offre de monnaie BC ; $H$ est appelé la base monétaire.
+	
+\section{L'évolution du système bancaire, stabilité financière versus concurrence}
+	
+	\subsection{Marché bancaire avant les années 80}
+
+	Le marché est peu concurrentiel et très fortement réglementé.
+	
+	\begin{itemize}
+		\item marché oligopolistique
+		\item changement du marché bancaire aux frontières nationales
+		\item métiers peu diversifiés, collecter de dépôts et octroyer des crédits
+		\item les taux créditeurs et taux débiteurs sont réglementés
+		\item politique monétaire très interventionniste
+	\end{itemize}
+	
+	Le marché est très stable mais peu concurrencé.
+	
+	\subsection{Années 80 : 3D}
+	
+	
+	
+	\begin{itemize}
+		\item Déréglementation : assouplissement des règles, taux libres et ouverture à la concurrence internationale. Les capitaux peuvent circuler et les prix sont libres.
+		\item Décloisonnement : "tout le monde peut faire tout ce qu'il veut". Les banques n'ont plus le monopole de collecte des dépôts (si l'argent est placé ailleurs de dans une banque, ce n'est plus de la monnaie mais un titre).
+		\item Désintermédiation :  les entreprises peuvent se financer directement sur le marché financier, auprès des épargnants ; le système bancaire est court-court-circuité. Il y a un changement qualitatif des actifs bancaires ; il y a moins de grandes entreprises et plus de crédit immobilier.
+	\end{itemize}
+	
+	Les banques sont attaquées (moins de dépôts, plus de concurrence et les taux diminuent) et ne gagnent presque plus sur le long terme (la marge d'intérêt est faible, les profits baissent). Elles vont alors jouer sur le court terme et entrer dans la spéculation. Elles vont acheter et revendre des actifs sur leur propre compte ou ceux de clients.
+	
+	Il y a plus de concurrence mais l'instabilité financière est introduire au coeur des banques.
+	
+	1987 : crach boursier, retour de réglementation (Basel I, II, III) mais différente : la concurrence est gardée mais la réglementation est adaptée aux les actifs.
+	
+	Nouveaux produits financiers grâce aux innovations technologiques, qui renforcent également cet effet sur les banques.
+	
+	Il y a plus de concurrence et plus d'instabilité poussent aux marchés dérivés, où on échange du risque.
