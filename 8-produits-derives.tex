@@ -1,0 +1,155 @@
+% 29/04/2013
+\chapter{Les produits financiers dérivés}
+
+Produit dérivé : actif financier dont la valeur dépend de la valeur d'actifs sous-jacents
+
+\section{Les forwards de taux d'intérêt}
+
+Un forward est un contrat irrévocable entre 2 parties stipulant qu'une transaction financière déterminée sera réalisée à une date future fixée. C'est engagement ferme entre deux parties d'acheter ou de vendre un actif sous-jacent à un prix convenu et à une date fixée (donc avec une certaine échéance).
+
+Un forward de taux d'intérêt implique la vente future d'un instrument de dette.
+
+L'acheteur a ce qu'on appelle une position longue, tandis que le vendeur a une position courte.
+
+Dans l'exemple, Axa compte sur une diminution des taux sur le temps pour avoir une augmentation des prix des actions. A l'inverse, BNP spécule sur une augmentation des taux, donc une diminution du prix des actions qu'elle a dans son porte-feuille.
+
+Un forward de taux d'intérêt suppose la définition de plusieurs paramètres: 
+\begin{itemize}
+	\item Les caractéristiques de l'instrument de dette qui fera l'objet de la vente 
+	\item Le montant de la dette 
+	\item Le prix (le taux d'intérêt) de l'instrument de dette 
+	\item La date à laquelle s'effectuera la livraison
+\end{itemize}
+
+L'exemple soulève plusieurs questions :
+
+\begin{itemize}
+	\item Pourquoi BNP Paribas accepte-t-elle de conclure ce contrat avec Axa ? 
+	\item[$\rightarrow$] il y a un risque de parte car les actions sont liées au taux d'intérêt, s'il augmente le prix des actions diminuera.
+	\item Comment peut-elle se couvrir contre ce risque ?
+	\item[$\rightarrow$] elle peut se couvrir avec un forward avec taux d'intérêt, afin d'avoir une position courte. Grâce au forward de taux, on est sûr du prix qu'il y aura dans un an vu qu'il est fixé.
+	\item Pourquoi Axa accepte-t-elle de conclure le contrat forward ?
+	\item[$\rightarrow$] Le risque d'Axa est que le taux du marché diminue et que le prix de ses actions augmente.
+\end{itemize}
+
+
+	\subsection{Avantages et inconvénients}
+	
+	\begin{itemize}
+		\item[+] souplesse car marché de gré à gré
+		\item[-] déficit de liquidité
+		\item[-] risque de défaut ou de contrepartie 
+	\end{itemize}
+	
+\section{Les futures de taux d'intérêt}
+
+Un contrat financier future de taux d'intérêt long terme est semblable à un forward de taux d'intérêt, dans la mesure où il spécifie qu'un titre de dette fera l'objet d'une transaction future entre 2 parties, à une date déterminée. La différence est qu'un future permet de s'affranchir des risques de liquidité et de défaut liés aux contrats forward.
+
+La différence est qu'on se trouve sur un marché boursier, et donc les risques de liquidité et de défaut sont moindres.
+
+Exemple : pour un future sur obligation dont le notionel (montant des obligations sous-jacentes) est de 100 000, il faut payer 149 890 avec une cote 149,89 (avec un point de base (<=> un pourcent) égal à 1000\$).
+
+microcouverture : par un future on a ...
+macrocouverture : on ne couvre pas un seul actif mais sur plusieurs types d'actif. On choisit l'actif sous-jacent qui permet au mieux de couvrir l'ensemble du porte-feuille
+
+	\subsection{Organisation des transactions sur le marché des futures}
+	\begin{itemize}
+		\item Standardisation des montants des contrats et des échéances 
+		\item Marché liquide 
+		\item Plusieurs actifs sous-jacents peuvent indifféremment être livrés 
+		\item Possibilité de traiter les futures en continu 
+		\item Chambre de compensation donc pas de risque de défaut 
+		\item Dépôt de marge initial ( deposit ou margin requirement) sur un compte de marge ; compte de garantie
+		\item Evaluation des futures au jour le jour (aussi appelé le principe marked to market). Les gains ou les pertes alimentent le compte détenu à la chambre de compensation
+		\item Si le solde d'un compte de marge passe en dessous d'un minimum préétabli, la chambre de compensation demande de procéder à un nouveau versement sur le compte (assurance contre le risque de défaut de l'agent)
+		
+		\item avec un futur, possibilité de conclure un contrat arrivé à échéance sans procéder à la livraison physique de l'actif sous-jacent ( position fermée)
+	\end{itemize}
+	
+	\subsection{Couverture du risque de change}
+	
+	(Illustration) Le 1er mars, une entreprise américaine s'attend à recevoir 50 millions de yens. Le risque de change est une baisse du dollar par rapport au yen. Elle peut alors contracter un futur sur le yen, avec une échéance à la fin du trimestre (fin juin). La taille du contrat est de 12,5 millions de yens, elle peut vendre 4 contrats (car 4 . 12,5 millions = 20 millions). Elle rachetera alors ses futures à un taux plus bas.
+
+	Exemple chiffré : le 1er mars, le taux de change pour un futur est 1 yen = 0.78 cents. Le 30 juin, sur le marché des changes comptant, 1 yen = 0.72 cents et le prix du futur est de 0.725 cents. Si une entreprise prend la position de vendeuse sur 4 contrats à terme, son gain sur le marché des futures est de 0.78 - 0.725 = 0.055 cents par yen. Le 30 juin, elle vendra ses yens à 0.72 cents. Grâce à l'opération de couverture, c'est comme si elle vendait ses yens le 30 juin à 0.72 + 0.055.
+	
+	
+\section{Les options}
+
+Les options sont des contrats qui donnent le droit à leur acheteur d'acheter 
+ou de vendre l'actif sous-jacent à un prix spécifique ( le prix d'exercice ou 
+strike) pendant une période donnée ou à une date donnée. 
+
+Le vendeur de l'option est obligé de vendre ou d'acheter l'actif sous-jacent 
+si l'acheteur de l'option décide d'exercer son droit d'acheter ou de vendre.
+
+L'acheteur de l'option doit payer un montant défini ( la prime) au vendeur. 
+2 types d'options: américaines et européennes (ne peut être exercé qu'à l'échéance).
+Un call est un contrat qui donne à son détenteur le droit d'acheter le sousjacent au prix d'exercice fixé. 
+Un put est inversement un contrat qui donne le droit à son détenteur de 
+vendre l'actif sous-jacent au prix d'exercice .
+
+	\subsection{Profils de gains et de pertes des futures et des options}
+	
+	En février, un agent A achète contre 2000\$ un call sur le contrat future des 
+obligations du Trésor américain, échéance fin juin, montant facial 100000\$ 
+et prix d'exercice 115. Option européenne. Le montant notionnel est de 100 000\$.
+
+Supposons: à l'échéance, le future sous-jacent cote 110, donc les 
+obligations sous-jacentes valent 110. L'agent A n'exerce pas son option et 
+perd la prime de 2000\$.
+
+Dans une telle situation, le prix de l'actif sous-jacent est inférieur au prix 
+d'exercice= option « out of the money » 
+
+Supposons, à la date d'échéance, le prix du future est de 115. L'agent A est 
+indifférent entre exercer ou non l'option. Perte du montant de la prime. 
+Option "at the money" car le prix d'exercice est égal à la quotation de l'actif sous-jacent.
+
+Supposons, à la date d'échéance, le future cote 120. L'agent A exerce 
+l'option. Gain: ((120-115) x 1000\$)- 2000\$ = 3000\$ . Option « in the money ». 
+
+Supposons, à la date d'échéance, le future cote 125. Gain : 8000\$
+
+Supposons qu'au lieu d'acheter l'option sur le future, l'agent A ait investi 
+directement sur le future. 
+
+Si le prix des obligations décline jusqu'à 110, le prix du futur baisse lui 
+aussi à 110. Perte : 5 x 1000\$ = 5000\$ 
+
+Si le prix des obligations vaut 115, perte ou gain nul 
+
+Si le prix des obligations vaut 120, gain 5000\$ 
+
+Si le prix des obligations vaut 125, gain : 10000\$
+
+Principales différences futures/options: 
+Les fonctions de gains des futures sont linéaires, contrairement à celles des 
+options qui sont non linéaires (voir graphique) 
+
+Achat d'un future : appel de marge /Achat d'une option : prime 
+
+Future : marked to market / Option européenne : non
+
+Illustration: se couvrir grâce aux options : les options apparaissent comme des instruments extrêmement précieux pour la macrocouverture du risque de taux encouru par les banques et les institutions financières.
+
+CALL  PUT 
+Prix du sous-jacent  +  - 
+Prix d'exercice  -  + 
+Temps jusqu'à échéance  +   +  
+Volatilité  +  + 
+Taux d'intérêt  +   - 
+Dividendes attendus  -  + 
+
+\section{Les swaps de taux d'intérêt}
+
+Le swap le plus courant : swap de taux « vanille » . On échange les cash-flows liés aux taux d'intérêt, donc seule la charge d'intérêt est échangée, mais on n'échange pas le principal (contrairement à un swap de devises).
+
+Dans un tel contrat, une entreprise s'engage à payer des cash-flows égaux aux intérêts à taux fixe sur un principal donné, pendant un certain nombre d'années. En retour, elle reçoit des intérêts à un taux variable sur le même principal, pendant la même durée. 
+
+Le taux variable le plus courant dans les contrats de swap est le taux LIBOR. 
+
+[Beaucoup de choses très intéressantes sont dans les slides et devraient être insérées à la place de cette phrase sarcastique.]
+
+Grâce au swap, Microsoft transforme sa dette à taux variable en une dette à taux fixe de 5,1 \%.
+
+\section{Les swaps de change}
