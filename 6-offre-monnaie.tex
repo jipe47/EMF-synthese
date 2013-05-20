@@ -5,7 +5,7 @@
 
 	\subsection{Le rôle des intermédiaires financiers}
 	
-	Intermédiaire financier : institution servant d'interface entre des emprunteurs et des épargnants. Il y a des intermédiaires financiers bancaires et non bancaires (ex : compagnie d'assurance).
+	\textbf{Intermédiaire financier} : institution servant d'interface entre des emprunteurs et des épargnants. Il y a des intermédiaires financiers bancaires et non bancaires (ex : compagnie d'assurance).
 	
 	Le besoin d'intermédiaires financiers est né de l'imperfection des marchés financiers :
 	
@@ -13,24 +13,32 @@
 		\item L'information est asymétrique et incomplète pour les acteurs, les intermédiaires prennent le risque qui devrait être pris par la personne qui prête de l'argent.
 	
 		\item Il peut y avoir une inadéquation entre les besoins du prêteur et ceux du demandeur. Les intermédiaires s'arrangent pour que les besoins soient satisfais des deux côtés
+		
+		\item la concurrence est imparfaite, c'est un marché oligopoliste (en tant qu'individu, cela coûte trop cher d'acquérir toute l'information nécessaire).
 \end{itemize}
 	Le risque est à la charge des banques et intermédiaires financiers. Vu leur taille, ils ont la possibilité de diversifier les risques.
 	
 	
 	\subsection{Le rôle de la banque}
 	
-	Un intermédiaire financier bancaire peut créer de la monnaie (avec un agrément auprès des institutions de régulation bancaires). Un intermédiaire non bancaire ne peut pas recevoir des dépôts bancaires pour pouvoir créer de la monnaie.
+	La banque est un intermédiaire financier bancaire qui peut créer de la monnaie (avec un agrément auprès des institutions de régulation bancaires). Un intermédiaire non bancaire ne peut pas recevoir des dépôts bancaires pour pouvoir créer de la monnaie.
 	
 	La banque va créer de la monnaie en octroyant des crédits aux emprunteurs. Elle va également sélectionner des projets d'investissements. Pour faire cette sélection, elle va regarder
 	
 	\begin{itemize}
 		\item les facteurs externes de rentabilité (conjonctions macroéconomiques)
-		\item facteurs liés  au projet et à l'entreprise. Pour cela, la banque dispose d'informations privatives sur l'emprunteur, elles ne sont pas publiques.
+		\item facteurs liés au projet et à l'entreprise. Pour cela, la banque dispose d'informations privatives sur l'emprunteur, elles ne sont pas publiques.
 	\end{itemize}
 	
 	L'actif bancaire (prêt octroyé aux ménages et aux entreprises) est très difficilement cessible sur les marchés financiers, il est illiquide car il porte sur le long terme et par le secret bancaire on ne connaît pas le risque associé. La titrisation permet de rendre cet actif plus liquide car en agrégeant beaucoup d'actifs on répartit et diversifie le risque. On peut avoir des problèmes si le modèle statistique utilisé est erroné et qu'au final le risque soit plus grand que ce qui est attendu.
 	
-	[note manuscrites]
+	\dessinS{schema_marche_credit}{.45}
+	
+	L'offre vient du secteur bancaire, tandis que la demande vient des ménages et des entreprises.
+	
+	Si la richesse des demandeurs est égale, la probabilité de défaut de remboursement augmente. Afin de ne pas perdre les clients, la banque va garder ses prix. Ainsi, plus le taux d'intérêt augmente, plus les demandeurs sérieux se retirent.
+	
+	Le marché est rationné à cause de cette probabilité de non remboursement : si cette probabilité est trop grande, on refuse des crédits. C'est ce qui n'est pas arrivé avec la crise des subprimes, où des crédits non remboursables ont été titrisés en masse.
 	
 \section{La création monétaire}
 
@@ -39,107 +47,127 @@ Il y a trois sources à la création de monnaie, appelées les contreparties de 
 \begin{itemize}
 	\item contrepartie extérieure de la masse monétaire. Elle est issue des opérations de change de la banque centrale et du solde de la balance courante.
 	
-	\item contrepartie "créances nettes" de l'état : les banques achètent de la dette publique. La banque centrale européenne ne peut acheter de la dette des banques de l'union européenne.
+	\item contrepartie "créances nettes" de l'État : les banques achètent de la dette publique. L'Etat émet ainsi des obligations d'Etat (très sûrs) pour financer la dette publique, pour recevoir en échange des liquidités pouvant financer les dépenses courantes. La banque centrale européenne ne peut acheter de la dette des banques de l'union européenne.
+	
 	\item contrepartie "créance nette" sur l'économie (l'essentiel de la création monétaire) : ensemble des crédits octroyés aux ménages et aux entreprises.
 \end{itemize}
 
-On a l'offre de monnaie $M$ = billet et pièces $C$ + objets à vue bancaire $D$.
+On a l'offre de monnaie ($M$), les billets et pièces en circulation ($C$) et objets à vue bancaire (dépôts) $D$. On a donc que
+
+	$$M = C + D$$
+
+
 
 	\subsection{Un système bancaire avec 100\% de réserves}
 	
-	Supposons une économie sans manque, où $D = 0$, donc $M = C$, la masse monétaire n'est constituée que des billets et des pièces. Par exemple, prenons $M = C = 1000$ euros.
+	Supposons une économie sans banque, où $D = 0$. Donc $M = C$, la masse monétaire n'est constituée que des billets et des pièces. Par exemple, prenons $M = C = 1000$ euros.
 	
-	Introduisons les banques mais celles-ci n'acceptent que les dépôts et n'octroient aucun crédit. Si les 1000 euros sont déposés à la banque, $M = D = 1000$ euros.
+	Introduisons les banques mais celles-ci n'acceptent que les dépôts et n'octroient aucun crédit. Si les 1000 euros sont déposés à la banque, $M = D = 1000$ euros. Les dépôts gardés en banque forment les réserves.
 	
-	Bilan de la banque :
-	
-	\begin{tabular}{c|c}
+\begin{center}
+ 	\begin{tabular}{c|c}
 	Actifs & Passif \\ 
 	\hline 
 	Réserves, 1000 & Dépôts, 1000
-	\end{tabular} 
+	\end{tabular}
+ \end{center} 
 	
-	Avec 100\% de réserve, il n'y a pas de création monétaire.
+	Avec 100\% de réserve, il n'y a donc pas de création monétaire.
 	
 	\subsection{Un système bancaire avec des réserves partielles}
 	
+	Supposont que les banques accordent des crédits, mais qu'elles doivent garder une partie des dépôts en réserve.
+	
 	\subsubsection{Avec une seule banque}
 	
-	Les banques peuvent octroyer des crédits. Supposons que la banque octroie un crédit de 800 euros.
+	Supposons que la banque octroie un crédit de 800 euros.
 	
+\begin{center}
 	\begin{tabular}{c|c}
 	Actif & Passif \\ 
 	\hline 
 	Réserve, 200 & Dépots, 1000 \\ 
 	Crédit, 800 & 
 	\end{tabular} 
+\end{center}
 	
 	Masse monétaire : $M = C + D = 800+  1000 = 1800$. On a donc une création monétaire de $1800 - 1000 = 800$.
 	
-	\begin{itemize}
-		\item supposons que les 800 de liquidité sont déposés à la banque. Cette dernière n'octroie pas de crédit.
+	Supposons que les 800 de liquidité sont déposés à la banque. Cette dernière n'octroie pas de crédit.
 		
-		\begin{tabular}{c|c}
+\begin{center}
+ 		\begin{tabular}{c|c}
 		Actif & Dépot \\ 
 		\hline 
 		Réserves, 1000 & Dépots, 1800 \\ 
 		Crédit, 800 &  
-		\end{tabular} 
+		\end{tabular}
+ \end{center} 
 		
-		La masse monétaire est de 1800 sous forme de dépôt ; on n'a pas de création monétaire, seule la composition de la masse monétaire a changé.
+	La masse monétaire est de 1800 sous forme de dépôt ; on n'a pas de création monétaire, seule la composition de la masse monétaire a changé.
 		
-		\item Si un individu retire 200 euros, le dépôt ne s'élève plus qu'à 1600 et les réserves sont à 200. (??)
+	Si un individu retire 200 euros, le dépôt ne s'élève plus qu'à 1600 et les réserves sont à 200 (?).
 		
-		\item supposons que l'emprunteur rembourse son prêt.
+	Supposons que l'emprunteur rembourse son prêt. On a alors
 		
+\begin{center}
 		\begin{tabular}{c|c}
 		Actif & Passif \\ 
 		\hline 
 		Réserves, 1000 & Dépôt, 1000 \\ 
 		Crédit, 0 & 
 		\end{tabular}
+\end{center}
 		
 		La masse monétaire est de 1000 euros ; chaque fois qu'un crédit est remboursé on a une destruction monétaire (ici de 800 euros).
-	\end{itemize}
 	
 	La création monétaire augmente si le nombre de crédits ouverts est plus grand que le nombre de crédits remboursés.
 	
 	
 	\subsubsection{Avec plusieurs banques}
 	
-	Supposons deux banques, A et B. La masse monétaire en circulation est égale à 1000 euros, déposés à la banque A. Celle-ci a un taux de réserve sur dépôt de 20\%.
+	Supposons deux banques, A et B. La masse monétaire en circulation est égale à 1000 euros, déposés à la banque A. Celle-ci a un taux de réserve sur dépôt de 20\% (= $\frac{\text{Réserves}}{\text{Dépôts}}$.
 	
+\begin{center}
 	\begin{tabular}{c|c}
 	Actif (A) & Passif (A)\\ 
 	\hline 
-	Réserve, 200 & Dépôts, 1000 (D1) \\ 
+	Réserve, 200 & Dépôts, 1000 ($D_1$) \\ 
 	Crédits, 800 &  
 	\end{tabular} 
+\end{center}
 	
-	Création monétaire : 1800 - 1000 = 800 euros. La masse monétaire est de 800 + 1000 = 1800.
+	Création monétaire est de 1800 - 1000 = 800 euros. La masse monétaire est de 800 + 1000 = 1800.
 	
-	L'emprunteur dépose les 800 euros à la banque B, qui a un taux de réserve de 20\%.
+	L'emprunteur dépose ces 800 euros à la banque B, qui a un taux de réserve de 20\%.
 	
+\begin{center}
 	\begin{tabular}{c|c}
 	Actif (B) & Passif (B) \\ 
 	\hline 
-	Réserve, 160 & Dépôts, 800 (D2) \\ 
+	Réserve, 160 & Dépôts, 800 ($D_2$) \\ 
 	Crédit, 640 &  
 	\end{tabular} 
+\end{center}
 	
 	$M = 1800 + 640 = 2440$. La création monétaire est de 680 euros.
 	
-	Relations possibles entre A et B. Supposons qu'un client de la banque A retire 100 euros.
+	\paragraph{Relations entre A et B}
 	
+	Supposons qu'un client de la banque A retire 100 euros.
+	
+\begin{center}
 	\begin{tabular}{c|c}
 	Actif (A) & Passif (A) \\ 
 	\hline 
 	Réserves, 100 & Dépôts, 900 \\ 
 	Crédit, 800 &  
 	\end{tabular} 
+\end{center}
 	
 	Le taux de réserve est inférieur à 20\%, il y a un manque de liquidité. La banque A s'adresse à la banque B sur le marché interbancaire et emprunte 100 euros. Des opérations interbancaires (OI) s'insèrent dans le bilan (au taux EONIA) :
 	
+\begin{center}
 	\begin{tabular}{c|c}
 	Actif (A) & Passif (A) \\ 
 	\hline 
@@ -154,9 +182,11 @@ On a l'offre de monnaie $M$ = billet et pièces $C$ + objets à vue bancaire $D$
 	Crédit, 640 &  \\
 	OI, 100 &
 	\end{tabular}
+\end{center}
 	
-	Si la banque B refuse ou ne peut pas prêter le crédit, la banque A va s'adresser à la banque centrale. Elle ne s'y adresse pas directement, elle va d'abord voir chez les autres banques, car les taux d'intérêts sont plus élevés. Cet emprunt à la banque centrale appelé une opération de refinancement.
+	Si la banque B refuse ou ne peut pas prêter le crédit, la banque A va s'adresser à la banque centrale. Elle ne s'y adresse pas directement, elle va d'abord voir chez les autres banques, car les taux d'intérêts sont plus élevés à la BC. Cet emprunt à la banque centrale appelé une opération de refinancement.
 	
+\begin{center}
 	\begin{tabular}{c|c}
 	Actif (A) & Passif (A) \\ 
 	\hline 
@@ -179,39 +209,47 @@ On a l'offre de monnaie $M$ = billet et pièces $C$ + objets à vue bancaire $D$
 	X, 500 & Billets, 240 \\ 
 	Refinancement, 100 & Réserves, 360 \\
 	\end{tabular}
+\end{center}
 	
 	Les réserves de la BC sont l'addition des réserves de A et B, les dépôts des banques à la BC.
 	
 	Supposons que la BC émette davantage de billets en circulation.
 	
+\begin{center}
 	\begin{tabular}{c|c}
 	Actif (C) & Passif (BC) \\ 
 	\hline 
 	X, + 100 & Billets, +100 
 	\end{tabular}
+\end{center}
 	
 	Une émission de billets entraîne une dévaluation de la monnaie et une réévaluation des monnaies étrangère : le stock n'a pas changé mais bien sa valeur.
 	
 	Si l'économie connaît un déficit de la balance courante (c'est-à-dire importation $>$ exportation), il y a un achat de devises auprès de la BC.
 	
+\begin{center}
 	\begin{tabular}{c|c}
 	Actif (C) & Passif (BC) \\ 
 	\hline 
 	X, -100 & Billets, -100
 	\end{tabular}
+\end{center}
 	
 	Tant que les importations sont $>$ exportations, il y a une diminution des réserves de devises.
 	
 	% 17 / 4 / 2013
 	
+	\paragraph{Création de monnaie finie}
 	Supposons que les 640 de la banque B sont déposés à la banque C.
 	
+\begin{center}
 	\begin{tabular}{c|c}
 	Actif & Passif \\ 
 	\hline 
 	Réserves, 128 & Dépôt, 640 (D3) \\ 
 	Crédits, 512 &  
 	\end{tabular} 
+\end{center}
 	
 	La création monétaire de la banque C est de 512 euros.
 	
@@ -234,17 +272,20 @@ On a l'offre de monnaie $M$ = billet et pièces $C$ + objets à vue bancaire $D$
 	
 	Cette limite de création n'arrange pas les banques car les crédits qu'elles peuvent délivrer sont limités. Elles ont mis en place la titrisation pour dépasser cette limite.
 	
-	La création de monnaie n'est pas une création de richesse, mais de liquidités.
+	Nb : la création de monnaie n'est pas une création de richesse, mais de liquidités pour ceux qui en ont besoin.
 	
 	\subsection{Petit modèle de création monétaire}
 	
-	[schéma]
+	\dessinS{schema_modele_econ}{.26}
 	
-	Demande de monnaie : $ M^d = P. L (Y, i)$ (L fonction de demande de liquidité). Si $Y$ est constant, $M = P.Y.L(i)$
+	On a
+	\begin{itemize}
+		\item La demande de monnaie : $ M^d = P\times L (Y, i)$. $L$ est la fonction de demande de liquidité. Si $Y$ est constant, $M = P\times Y\times L(i)$
 	
-	Demande d'espèce : $E^d = c M^d$, $c$ est la part de la demande de monnaie sous forme d'espèce.
+		\item La demande d'espèce : $E^d = c \times M^d$. $c$ est la part de la demande de monnaie sous forme d'espèce.
 	
-	Demande de dépôt à vue : $D^d = (1 - c) M^d$
+		\item La demande de dépôt à vue : $D^d = (1 - c)\times   M^d$
+	\end{itemize}
 	
 	Il y aura une demande de réserves de la part de banque commerciale : $R^d = \Theta D$, $\Theta$ étant le taux de réserve. Vu la troisième équation, c'est équivalent à $R^d = (1 - c)\Theta M^d$.
 	
@@ -260,7 +301,7 @@ On a l'offre de monnaie $M$ = billet et pièces $C$ + objets à vue bancaire $D$
 	
 	Si $c = 1$, $E^d = M^d$ et $H = P . Y . L(i)$, l'ensemble de la monnaie est détenue sous forme de billets ; l'offre de monnaie est entièrement contrôlée par la BC.
 	
-	Si $c = 0$, on n'a pas de billets ($E^d = 0$), tout est détenu sous forme de dépôts : $D^d = P.Y.L(i)$ et $H = \Theta . P . Y . L(i)$.
+	Si $c = 0$, on n'a pas de billets ($E^d = 0$), tout est détenu sous forme de dépôts : $D^d = P\times Y\times L(i)$ et $H = \Theta . P \times  Y \times  L(i)$.
 	
 	Le cas général est $0 < c < 1$. La demande de monnaie BC est moins élevée que la demande de monnaie.
 	
@@ -268,19 +309,23 @@ On a l'offre de monnaie $M$ = billet et pièces $C$ + objets à vue bancaire $D$
 	
 	$$H = E^d + R^d \Leftrightarrow \underbrace{H - E^d}_{\text{offre de réserve}} = \underbrace{R^d}_{\text{demande de réserves}}$$
 	
-	En zone euro le taux d'intérêt de ce marché est l'EONIA, aux EU c'est le Fed Funds rate. Chaque fois que l'EONIA (moyenne des taux d'intérêt des transactions d'un jour) s'écarte du taux d'intérêt directeur, la BC intervient (injection de liquidités). C'était un marché très liquide jusqu'en 2007.
+	En zone euro le taux d'intérêt de ce marché est l'EONIA, aux EU c'est le Fed Funds rate. Chaque fois que l'EONIA (moyenne des taux d'intérêt des transactions d'un jour) s'écarte du taux d'intérêt directeur, la BC intervient par une injection de liquidités. C'était un marché très liquide jusqu'en 2007.
 	
-	[graphique]
+	\dessinS{schema_eonia}{.4}
 	
 	\subsubsection{Le marché interbancaire}
 	
 	La BC intervient par une politique d'open market.
 	
-	[schéma]
+	\dessinS{schema_eonia2}{.4}
 	
 	\subsubsection{Offre et la demande de monnaie et le multiplicateur monétaire}
 	
-	On sait que l'offre de monnaie BC est $H = (C + ( 1 - c) \Theta) P Y . L(i)$. On a que $\underbrace{H \underbrace{\frac{1}{(c + ( 1  - c) \Theta)}_{\text{multiplicateur monétaire} > 1}}}_{\text{offre de monnaie}} = \underbrace{P . Y . L(i)}_{\text{demande de monnaie}}$. Cela signifie que l'offre de monnaie est un multiple de l'offre de monnaie BC ; $H$ est appelé la base monétaire.
+	On sait que l'offre de monnaie BC est $H = (C + ( 1 - c) \Theta) P \times Y \times  L(i)$. On a que 
+	
+	$$\underbrace{H \underbrace{\frac{1}{(c + ( 1  - c) \Theta)}}_{\text{multiplicateur monétaire} > 1}}_{\text{offre de monnaie}} = \underbrace{P \times  Y \times  L(i)}_{\text{demande de monnaie}}$$
+	
+	Cela signifie que l'offre de monnaie est un multiple de l'offre de monnaie BC ; $H$ est appelé la base monétaire.
 	
 \section{L'évolution du système bancaire, stabilité financière versus concurrence}
 	
@@ -299,8 +344,6 @@ On a l'offre de monnaie $M$ = billet et pièces $C$ + objets à vue bancaire $D$
 	Le marché est très stable mais peu concurrencé.
 	
 	\subsection{Années 80 : 3D}
-	
-	
 	
 	\begin{itemize}
 		\item Déréglementation : assouplissement des règles, taux libres et ouverture à la concurrence internationale. Les capitaux peuvent circuler et les prix sont libres.
