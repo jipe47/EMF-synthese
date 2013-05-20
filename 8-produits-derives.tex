@@ -1,13 +1,13 @@
 % 29/04/2013
 \part{Les produits financiers dérivés}
 
-Produit dérivé : actif financier dont la valeur dépend de la valeur d'actifs sous-jacents
+Un produit dérivé est un actif financier dont la valeur dépend de la valeur d'actifs sous-jacents
 
 \section{Les forwards de taux d'intérêt}
 
-Un forward est un contrat irrévocable entre 2 parties stipulant qu'une transaction financière déterminée sera réalisée à une date future fixée. C'est engagement ferme entre deux parties d'acheter ou de vendre un actif sous-jacent à un prix convenu et à une date fixée (donc avec une certaine échéance).
+Un forward est un contrat irrévocable entre 2 parties stipulant qu'une transaction financière déterminée sera réalisée à une date future fixée. C'est engagement ferme entre deux parties d'acheter ou de vendre un actif sous-jacent à un prix convenu et à une date fixée (donc avec une certaine échéance). Un forward de taux d'intérêt implique la vente future d'un instrument de dette.
 
-Un forward de taux d'intérêt implique la vente future d'un instrument de dette.
+Par exemple, un forward de taux d'intérêt entre BNP Paribas et l'entreprise d'assurances AXA peut prendre la forme d’un engagement de BNP Paribas à vendre à Axa, dans un an, des obligations du Trésor américain de première catégorie d'échéance 2030 et de coupon 6\% pour un montant de 5 millions de \$, à un prix défini tel que ces titres rapportent le même rendement (yield) qu’aujourd'hui, à savoir 6\%. 
 
 L'acheteur a ce qu'on appelle une position longue, tandis que le vendeur a une position courte.
 
@@ -25,7 +25,7 @@ L'exemple soulève plusieurs questions :
 
 \begin{itemize}
 	\item Pourquoi BNP Paribas accepte-t-elle de conclure ce contrat avec Axa ? 
-	\item[$\rightarrow$] il y a un risque de parte car les actions sont liées au taux d'intérêt, s'il augmente le prix des actions diminuera.
+	\item[$\rightarrow$] il y a un risque de perte car les actions sont liées au taux d'intérêt, s'il augmente le prix des actions diminuera.
 	\item Comment peut-elle se couvrir contre ce risque ?
 	\item[$\rightarrow$] elle peut se couvrir avec un forward avec taux d'intérêt, afin d'avoir une position courte. Grâce au forward de taux, on est sûr du prix qu'il y aura dans un an vu qu'il est fixé.
 	\item Pourquoi Axa accepte-t-elle de conclure le contrat forward ?
@@ -47,12 +47,28 @@ Un contrat financier future de taux d'intérêt long terme est semblable à un f
 
 La différence est qu'on se trouve sur un marché boursier, et donc les risques de liquidité et de défaut sont moindres.
 
-Exemple : pour un future sur obligation dont le notionel (montant des obligations sous-jacentes) est de 100 000, il faut payer 149 890 avec une cote 149,89 (avec un point de base (<=> un pourcent) égal à 1000\$).
+Exemple : pour un future sur obligation dont le notionel (montant des obligations sous-jacentes) est de 100 000, il faut payer 149 890 avec une cote 149,89 (avec un point de base ($\Leftrightarrow$ un pourcent) égal à 1000\$).
 
-microcouverture : par un future on a ...
-macrocouverture : on ne couvre pas un seul actif mais sur plusieurs types d'actif. On choisit l'actif sous-jacent qui permet au mieux de couvrir l'ensemble du porte-feuille
+	\subsection{Couverture}
+	
+	On a
+	
+	$$NC = \frac{VA}{VC}$$
+	
+	\begin{itemize}
+		\item NC, nombre de contrats
+		\item VA, valeur de l'actif à couvrir
+		\item VC, valeur unitaire du contrat
+	\end{itemize}
+
+	On peut distinguer
+	\begin{itemize}
+		\item microcouverture : par un future on a ...
+		\item macrocouverture : on ne couvre pas un seul actif mais sur plusieurs types d'actif. On choisit l'actif sous-jacent qui permet au mieux de couvrir l'ensemble du porte-feuille
+	\end{itemize}
 
 	\subsection{Organisation des transactions sur le marché des futures}
+	
 	\begin{itemize}
 		\item Standardisation des montants des contrats et des échéances 
 		\item Marché liquide 
@@ -68,7 +84,7 @@ macrocouverture : on ne couvre pas un seul actif mais sur plusieurs types d'acti
 	
 	\subsection{Couverture du risque de change}
 	
-	(Illustration) Le 1er mars, une entreprise américaine s'attend à recevoir 50 millions de yens. Le risque de change est une baisse du dollar par rapport au yen. Elle peut alors contracter un futur sur le yen, avec une échéance à la fin du trimestre (fin juin). La taille du contrat est de 12,5 millions de yens, elle peut vendre 4 contrats (car 4 . 12,5 millions = 20 millions). Elle rachetera alors ses futures à un taux plus bas.
+	(Illustration) Le 1er mars, une entreprise américaine s'attend à recevoir 50 millions de yens. Le risque de change est une baisse du dollar par rapport au yen. Elle peut alors contracter un futur sur le yen, avec une échéance à la fin du trimestre (fin juin). La taille du contrat est de 12,5 millions de yens, elle peut vendre 4 contrats (car $4 \times 12,5$ millions = 20 millions). Elle rachètera alors ses futures à un taux plus bas.
 
 	Exemple chiffré : le 1er mars, le taux de change pour un futur est 1 yen = 0.78 cents. Le 30 juin, sur le marché des changes comptant, 1 yen = 0.72 cents et le prix du futur est de 0.725 cents. Si une entreprise prend la position de vendeuse sur 4 contrats à terme, son gain sur le marché des futures est de 0.78 - 0.725 = 0.055 cents par yen. Le 30 juin, elle vendra ses yens à 0.72 cents. Grâce à l'opération de couverture, c'est comme si elle vendait ses yens le 30 juin à 0.72 + 0.055.
 	
@@ -82,63 +98,68 @@ strike) pendant une période donnée ou à une date donnée.
 Le vendeur de l'option est obligé de vendre ou d'acheter l'actif sous-jacent 
 si l'acheteur de l'option décide d'exercer son droit d'acheter ou de vendre.
 
-L'acheteur de l'option doit payer un montant défini ( la prime) au vendeur. 
-2 types d'options: américaines et européennes (ne peut être exercé qu'à l'échéance).
-Un call est un contrat qui donne à son détenteur le droit d'acheter le sousjacent au prix d'exercice fixé. 
+L'acheteur de l'option doit payer un montant défini (la prime) au vendeur. Il existe deux types d'options: américaines et européennes (ne peut être exercé qu'à l'échéance).
+
+Un call est un contrat qui donne à son détenteur le droit d'acheter le sous-jacent au prix d'exercice fixé. 
+
 Un put est inversement un contrat qui donne le droit à son détenteur de 
 vendre l'actif sous-jacent au prix d'exercice .
 
 	\subsection{Profils de gains et de pertes des futures et des options}
 	
-	En février, un agent A achète contre 2000\$ un call sur le contrat future des 
-obligations du Trésor américain, échéance fin juin, montant facial 100000\$ 
-et prix d'exercice 115. Option européenne. Le montant notionnel est de 100 000\$.
+	En février, un agent A achète contre 2000\$ un call sur le contrat future des obligations du Trésor américain, échéance fin juin, montant facial 100000\$ et prix d'exercice 115. Option européenne. Le montant notionnel est de 100 000\$.
 
-Supposons: à l'échéance, le future sous-jacent cote 110, donc les 
-obligations sous-jacentes valent 110. L'agent A n'exerce pas son option et 
-perd la prime de 2000\$.
+Supposons: à l'échéance, le future sous-jacent cote 110, donc les obligations sous-jacentes valent 110. L'agent A n'exerce pas son option et perd la prime de 2000\$.
 
-Dans une telle situation, le prix de l'actif sous-jacent est inférieur au prix 
-d'exercice= option « out of the money » 
+Dans une telle situation, le prix de l'actif sous-jacent est inférieur au prix d'exercice : option « out of the money » 
 
-Supposons, à la date d'échéance, le prix du future est de 115. L'agent A est 
-indifférent entre exercer ou non l'option. Perte du montant de la prime. 
-Option "at the money" car le prix d'exercice est égal à la quotation de l'actif sous-jacent.
+Supposons, à la date d'échéance, le prix du future est de 115. L'agent A est indifférent entre exercer ou non l'option. Perte du montant de la prime. C'est une option "at the money" car le prix d'exercice est égal à la quotation de l'actif sous-jacent.
 
-Supposons, à la date d'échéance, le future cote 120. L'agent A exerce 
-l'option. Gain: ((120-115) x 1000\$)- 2000\$ = 3000\$ . Option « in the money ». 
+Supposons, à la date d'échéance, le future cote 120. L'agent A exerce l'option. Gain: ((120-115) x 1000\$)- 2000\$ = 3000\$ . Option "in the money". 
 
 Supposons, à la date d'échéance, le future cote 125. Gain : 8000\$
 
-Supposons qu'au lieu d'acheter l'option sur le future, l'agent A ait investi 
-directement sur le future. 
+Supposons qu'au lieu d'acheter l'option sur le future, l'agent A ait investi directement sur le future. 
 
-Si le prix des obligations décline jusqu'à 110, le prix du futur baisse lui 
-aussi à 110. Perte : 5 x 1000\$ = 5000\$ 
+\begin{itemize}
+	\item Si le prix des obligations décline jusqu'à 110, le prix du futur baisse lui aussi à 110. Perte : 5 x 1000\$ = 5000\$ 
+	\item Si le prix des obligations vaut 115, perte ou gain nul 
+	\item Si le prix des obligations vaut 120, gain 5000\$ 
+	\item Si le prix des obligations vaut 125, gain : 10000\$
+\end{itemize}
 
-Si le prix des obligations vaut 115, perte ou gain nul 
 
-Si le prix des obligations vaut 120, gain 5000\$ 
+Principales différences entres les futures et options :
 
-Si le prix des obligations vaut 125, gain : 10000\$
-
-Principales différences futures/options: 
-Les fonctions de gains des futures sont linéaires, contrairement à celles des 
+\begin{itemize}
+	\item Les fonctions de gains des futures sont linéaires, contrairement à celles des 
 options qui sont non linéaires (voir graphique) 
-
-Achat d'un future : appel de marge /Achat d'une option : prime 
-
-Future : marked to market / Option européenne : non
+	\item Achat d'un future : appel de marge /Achat d'une option : prime 
+	\item Future : marked to market / Option européenne : non
+\end{itemize}
 
 Illustration: se couvrir grâce aux options : les options apparaissent comme des instruments extrêmement précieux pour la macrocouverture du risque de taux encouru par les banques et les institutions financières.
 
-CALL  PUT 
-Prix du sous-jacent  +  - 
-Prix d'exercice  -  + 
-Temps jusqu'à échéance  +   +  
-Volatilité  +  + 
-Taux d'intérêt  +   - 
-Dividendes attendus  -  + 
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline 
+  & CALL & PUT \\ 
+\hline 
+Prix du sous-jacent & + & - \\ 
+\hline 
+Prix d'exercice & - & + \\ 
+\hline 
+Temps jusqu'à échéance & + & + \\ 
+\hline 
+Volatilité & + & + \\ 
+\hline 
+Taux d'intérêt & + & - \\ 
+\hline 
+Dividendes attendus & - & + \\ 
+\hline 
+\end{tabular} 
+\end{center}
+
 
 \section{Les swaps de taux d'intérêt}
 
@@ -148,25 +169,68 @@ Dans un tel contrat, une entreprise s'engage à payer des cash-flows égaux aux 
 
 Le taux variable le plus courant dans les contrats de swap est le taux LIBOR. 
 
-[Beaucoup de choses très intéressantes sont dans les slides et devraient être insérées à la place de cette phrase sarcastique.]
+Exemple : considérons un swap à 3 ans entre deux entreprises, Microsoft et Intel, initié le 5/03/2013. Microsoft s’engage à payer un taux d'intérêt de 5\% à Mobistar sur un principal de 100 millions de dollars US. En retour, Mobistar s'engage à payer des intérêts à Microsoft au taux Libor 6 mois. Les flux seront échangés tous les 6 mois et le taux fixe de 5\% est en composition semestrielle. Microsoft est le payeur de taux fixe et Mobistar le payeur de taux variable. Grâce au swap, Microsoft transforme sa dette à taux variable en une dette à taux fixe de 5,1 \%.
 
-Grâce au swap, Microsoft transforme sa dette à taux variable en une dette à taux fixe de 5,1 \%.
-
+\dessinS{8}{.30}
 % 6/5/2013
+
+	\subsection{L'utilisation des swaps pour transformer un engagement}
+	
+	Pour Microsoft, le swap pourrait être utilisé pour transformer une dette à 
+taux variable en une dette à taux fixe.  Supposons que Microsoft ait contracté une dette de 100 millions au taux Libor + 10 points de base. Cash-flows équivalents à un emprunt à taux fixe à 5,1\% 
+
+	3 ensembles de cash-flows: 
+	\begin{itemize}
+		\item Paiement de Libor + 10 à ses prêteurs 
+		\item Réception du Libor sur le swap 
+		\item Paiement de 5\% selon les termes du swap
+	\end{itemize}
+
+	Pour Mobistar, ce swap pourrait être employé pour transformer une dette à taux fixe en une dette à taux variable. Supposons que Mobistar ait contracté un emprunt au taux fixe de 5,2\% pour 100 millions.  Après la mise en place du swap, 3 types de cash-flows seront reçus ou payés par Mobistar: 
+	\begin{itemize}
+		\item Paiement de 5,2\% à ses prêteurs 
+		\item Réception de 5\% sur le swap 
+		\item Paiement du Libor sur le swap 
+	\end{itemize}
+
+	Ces cash-flows sont équivalents à un emprunt à taux variable Libor + 20.
+	
+	\dessinS{9}{.35}
 
 	\subsection{L'utilisation d'un swap pour transformer un actif}
 
-	43 : -30. (points de base) = -0.3\%
+	
+	Un swap peut aussi servir pour Microsoft, à transformer un actif rapportant un taux fixe en un actif rapportant un taux variable. Supposons que Microsoft détienne un portefeuille d'obligations de 100 millions qui paient 4,7\% de taux de coupon (semestriel) dans les 3 prochaines années.
+	
+	3 séries de cash-flows :
+	
+	\begin{itemize}
+		\item L'encaissement de 4,7\% sur le portefeuille d'obligations 
+		\item Réception du Libor sur le swap 
+		\item Paiement de 5\% sur le swap 
+	\end{itemize}
+
+	\dessinS{10}{.35}
+	
+	En fin de compte, le portefeuille d'obligations à taux fixe a été transformé en un portefeuille obligataire à taux variable rapportant Libor – 30 (points de base, soit 0.3\%). 
+
+	Symétriquement, si Mobistar possède un portefeuille d'obligations à taux variable rapportant Libor -20, le swap permet de transformer ce portefeuille en portefeuille de titres à taux fixe rapportant 4,8\%.
 	
 	\subsection{L'avantage comparatif}
 	
+	\dessinS{11}{.45}
+	
+	Bcorp souhaite emprunter à taux fixe alors que Acorp préférerait emprunter à taux variable, fondé sur LIBOR 6 mois. Bcorp a donc un avantage comparatif sur le taux variable et Acorp un avantage sur le marché à taux fixe. Il va y avoir contraction d'un swap.
+	
 	La société B emprunte avec un plus grand taux que A, mais la différence de taux variable (0.7) est moindre que la différence de taux fixe (1.2), elle est moins pénalisée sur le taux variable. Un swap est possible entre ces taux : le gain du swap sera $1.2 - 0.7 = 0.5$ à répartir entre les deux parties (A aura $0.25$).
 	
-	Séries de cashflow pour A : 1) emprunte 10 millions au taux fixe avec intérêt à 4\%, 2) dans le cadre du swap elle reçoit de B 3.95\% (taux fixe) et paie le taux d'intérêt variable Libor, comme si A avait emprunté à Libor + 5 points de base (à la place de Libor + 30, soit 25 points de base en moins
+	Séries de cashflow pour A : 1) emprunte 10 millions au taux fixe avec intérêt à 4\%, 2) dans le cadre du swap elle reçoit de B 3.95\% (taux fixe) et paie le taux d'intérêt variable Libor, comme si A avait emprunté à Libor + 5 points de base (à la place de Libor + 30, soit 25 points de base en moins.
 	
 	Séries de cashflow pour B : 1) paie les intérêts au taux libor + 1 \%, et 2) dans le cadre du swap paie à A un taux fixe de 3.95 et reçoit de A le taux d'intéret libor, comme si B a emprunté à libor + 4,95\%.
+	
+	\dessinS{12}{.35}
 
-	Grâce au swap, A crédit à taux fixe -> variable, B variable -> fixe et  gain de 25 points de base des deux côtés.
+	Grâce au swap, A passe d'un crédit à taux fixe à un crédit à taux variable, tandis que B passe d'un taux variable à un taux fixe. Il y a un gain de 25 points de base des deux côtés : $(5,2\%-4\%) – (Libor + 100) – (Libor + 30) = 0,5\%$
 	
 	\subsection{Avantages et inconvénients}
 	
@@ -174,7 +238,7 @@ Grâce au swap, Microsoft transforme sa dette à taux variable en une dette à t
 
 	Les swaps peuvent être conclus pour des durées de vie très longues (jusqu'à 20 ans) alors que les options et les futures ont une moyenne de durées de vie beaucoup plus courtes, inférieures à 1 an.
 	
-	Toutefois, le marché des swaps peut souffrir d’un risque de liquidité 
+	Toutefois, le marché des swaps peut souffrir d'un risque de liquidité 
 	
 	Les contrats de swaps sont exposés au risque de contrepartie 
 
@@ -190,4 +254,8 @@ Un swap peut être utilisé pour transformer la nature des actifs. Supposons que
 
 Un swap de taux comme de devise permettent de transformer un emprunt ou un actif, en échangeant taux variable/taux fixe ou les devises.
 
+
+Exemple : supposons que Virgin souhaite emprunter 20 millions de AUD et Qantas Airways 15 millions de \$ et que le taux de change soit de 0,75 \$/AUD. Chaque entreprise va emprunter sur le marché sur lequel elle a un avantage comparatif et conclure un swap qui transformera l'emprunt de GE en un emprunt en AUD et celui de Qantas Airways en un emprunt en \$. 
+
+\dessinS{13}{.4}
 
