@@ -5,7 +5,7 @@ Un produit dérivé est un actif financier dont la valeur dépend de la valeur d
 
 \section{Les forwards de taux d'intérêt}
 
-Un forward est un contrat irrévocable entre 2 parties stipulant qu'une transaction financière déterminée sera réalisée à une date future fixée. C'est engagement ferme entre deux parties d'acheter ou de vendre un actif sous-jacent à un prix convenu et à une date fixée (donc avec une certaine échéance). Un forward de taux d'intérêt implique la vente future d'un instrument de dette.
+Un forward est un contrat irrévocable entre 2 parties stipulant qu'une transaction financière déterminée sera réalisée à une date future fixée. C'est un engagement ferme entre deux parties d'acheter ou de vendre un actif sous-jacent à un prix convenu et à une date fixée (donc avec une certaine échéance). Un forward de taux d'intérêt implique la vente future d'un instrument de dette.
 
 Par exemple, un forward de taux d'intérêt entre BNP Paribas et l'entreprise d'assurances AXA peut prendre la forme d’un engagement de BNP Paribas à vendre à Axa, dans un an, des obligations du Trésor américain de première catégorie d'échéance 2030 et de coupon 6\% pour un montant de 5 millions de \$, à un prix défini tel que ces titres rapportent le même rendement (yield) qu’aujourd'hui, à savoir 6\%. 
 
@@ -84,7 +84,7 @@ Exemple : pour un future sur obligation dont le notionel (montant des obligation
 	
 	\subsection{Couverture du risque de change}
 	
-	(Illustration) Le 1er mars, une entreprise américaine s'attend à recevoir 50 millions de yens. Le risque de change est une baisse du dollar par rapport au yen. Elle peut alors contracter un futur sur le yen, avec une échéance à la fin du trimestre (fin juin). La taille du contrat est de 12,5 millions de yens, elle peut vendre 4 contrats (car $4 \times 12,5$ millions = 20 millions). Elle rachètera alors ses futures à un taux plus bas.
+	(Illustration) Le 1er mars, une entreprise américaine s'attend à recevoir 50 millions de yens. Le risque de change est une baisse du dollar par rapport au yen. Elle peut alors contracter un futur sur le yen, avec une échéance à la fin du trimestre (fin juin). La taille du contrat est de 12,5 millions de yens, elle peut vendre 4 contrats (car $4 \times 12,5$ millions = 50 millions). Elle rachètera alors ses futures à un taux plus bas.
 
 	Exemple chiffré : le 1er mars, le taux de change pour un futur est 1 yen = 0.78 cents. Le 30 juin, sur le marché des changes comptant, 1 yen = 0.72 cents et le prix du futur est de 0.725 cents. Si une entreprise prend la position de vendeuse sur 4 contrats à terme, son gain sur le marché des futures est de 0.78 - 0.725 = 0.055 cents par yen. Le 30 juin, elle vendra ses yens à 0.72 cents. Grâce à l'opération de couverture, c'est comme si elle vendait ses yens le 30 juin à 0.72 + 0.055.
 	
@@ -169,7 +169,7 @@ Dans un tel contrat, une entreprise s'engage à payer des cash-flows égaux aux 
 
 Le taux variable le plus courant dans les contrats de swap est le taux LIBOR. 
 
-Exemple : considérons un swap à 3 ans entre deux entreprises, Microsoft et Intel, initié le 5/03/2013. Microsoft s’engage à payer un taux d'intérêt de 5\% à Mobistar sur un principal de 100 millions de dollars US. En retour, Mobistar s'engage à payer des intérêts à Microsoft au taux Libor 6 mois. Les flux seront échangés tous les 6 mois et le taux fixe de 5\% est en composition semestrielle. Microsoft est le payeur de taux fixe et Mobistar le payeur de taux variable. Grâce au swap, Microsoft transforme sa dette à taux variable en une dette à taux fixe de 5,1 \%.
+Exemple : considérons un swap à 3 ans entre deux entreprises, Microsoft et Mobistar, initié le 5/03/2013. Microsoft s’engage à payer un taux d'intérêt de 5\% à Mobistar sur un principal de 100 millions de dollars US. En retour, Mobistar s'engage à payer des intérêts à Microsoft au taux Libor 6 mois. Les flux seront échangés tous les 6 mois et le taux fixe de 5\% est en composition semestrielle. Microsoft est le payeur de taux fixe et Mobistar le payeur de taux variable. Grâce au swap, Microsoft transforme sa dette à taux variable en une dette à taux fixe de 5,1 \%.
 
 \dessinS{8}{.30}
 % 6/5/2013
@@ -226,7 +226,7 @@ taux variable en une dette à taux fixe.  Supposons que Microsoft ait contracté
 	
 	Séries de cashflow pour A : 1) emprunte 10 millions au taux fixe avec intérêt à 4\%, 2) dans le cadre du swap elle reçoit de B 3.95\% (taux fixe) et paie le taux d'intérêt variable Libor, comme si A avait emprunté à Libor + 5 points de base (à la place de Libor + 30, soit 25 points de base en moins.
 	
-	Séries de cashflow pour B : 1) paie les intérêts au taux libor + 1 \%, et 2) dans le cadre du swap paie à A un taux fixe de 3.95 et reçoit de A le taux d'intéret libor, comme si B a emprunté à libor + 4,95\%.
+	Séries de cashflow pour B : 1) paie les intérêts au taux Libor + 1 \%, et 2) dans le cadre du swap paie à A un taux fixe de 3.95 et reçoit de A le taux d'intérêt Libor, comme si B a emprunté à Libor + 4,95\%.
 	
 	\dessinS{12}{.35}
 

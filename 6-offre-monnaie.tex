@@ -14,7 +14,7 @@
 	
 		\item Il peut y avoir une inadéquation entre les besoins du prêteur et ceux du demandeur. Les intermédiaires s'arrangent pour que les besoins soient satisfais des deux côtés
 		
-		\item la concurrence est imparfaite, c'est un marché oligopoliste (en tant qu'individu, cela coûte trop cher d'acquérir toute l'information nécessaire).
+		\item la concurrence est imparfaite, c'est un marché oligopolistique (en tant qu'individu, cela coûte trop cher d'acquérir toute l'information nécessaire).
 \end{itemize}
 	Le risque est à la charge des banques et intermédiaires financiers. Vu leur taille, ils ont la possibilité de diversifier les risques.
 	
@@ -27,7 +27,7 @@
 	
 	\begin{itemize}
 		\item les facteurs externes de rentabilité (conjonctions macroéconomiques)
-		\item facteurs liés au projet et à l'entreprise. Pour cela, la banque dispose d'informations privatives sur l'emprunteur, elles ne sont pas publiques.
+		\item les facteurs internes liés au projet et à l'entreprise. Pour cela, la banque dispose d'informations privatives sur l'emprunteur, elles ne sont pas publiques.
 	\end{itemize}
 	
 	L'actif bancaire (prêt octroyé aux ménages et aux entreprises) est très difficilement cessible sur les marchés financiers, il est illiquide car il porte sur le long terme et par le secret bancaire on ne connaît pas le risque associé. La titrisation permet de rendre cet actif plus liquide car en agrégeant beaucoup d'actifs on répartit et diversifie le risque. On peut avoir des problèmes si le modèle statistique utilisé est erroné et qu'au final le risque soit plus grand que ce qui est attendu.
@@ -121,12 +121,12 @@ On a l'offre de monnaie ($M$), les billets et pièces en circulation ($C$) et ob
 		
 		La masse monétaire est de 1000 euros ; chaque fois qu'un crédit est remboursé on a une destruction monétaire (ici de 800 euros).
 	
-	La création monétaire augmente si le nombre de crédits ouverts est plus grand que le nombre de crédits remboursés.
+	La création monétaire augmente si le nombre de crédits ouverts est plus grand que le nombre de crédits remboursés. De plus, elle existe si elle est supérieure à la destruction monétaire.
 	
 	
 	\subsubsection{Avec plusieurs banques}
 	
-	Supposons deux banques, A et B. La masse monétaire en circulation est égale à 1000 euros, déposés à la banque A. Celle-ci a un taux de réserve sur dépôt de 20\% (= $\frac{\text{Réserves}}{\text{Dépôts}}$.
+	Supposons deux banques, A et B. La masse monétaire en circulation est égale à 1000 euros, déposés à la banque A. Celle-ci a un taux de réserve sur dépôt de 20\% (= $\frac{\text{Réserves}}{\text{Dépôts}}$).
 	
 \begin{center}
 	\begin{tabular}{c|c}
@@ -223,7 +223,7 @@ On a l'offre de monnaie ($M$), les billets et pièces en circulation ($C$) et ob
 	\end{tabular}
 \end{center}
 	
-	Une émission de billets entraîne une dévaluation de la monnaie et une réévaluation des monnaies étrangère : le stock n'a pas changé mais bien sa valeur.
+	Une émission de billets entraîne une dévaluation de la monnaie et une réévaluation des monnaies étrangères : le stock n'a pas changé mais bien sa valeur.
 	
 	Si l'économie connaît un déficit de la balance courante (c'est-à-dire importation $>$ exportation), il y a un achat de devises auprès de la BC.
 	
@@ -255,13 +255,13 @@ On a l'offre de monnaie ($M$), les billets et pièces en circulation ($C$) et ob
 	
 	NB : les réserves sont toujours positives, car il faut faire face à des demandes de retrait des clients.
 	
-	$$M = D1 + D2 + D2 + \dots$$
+	$$M = D1 + D2 + D3 + \dots$$
 	
 	On peut observer que la création monétaire est de plus en plus réduites, donc le processus n'est pas illimité. Peut-on calculer le montant de la création monétaire à partir d'une masse monétaire initiale de 1000 ?
 	
 	$M_{\text{initiale}}$ = 1000 (sous forme de dépôt), $rr$ (taux de réserve) = $\frac{\text{Réserves}}{\text{Dépôts}} = 20\%$.
 	
-	$$M = D1 + \underbrace{(1 - rr) D1}_{\text{création monétaire banque A}} + (1 - rr) D1 + (1 - rr) D3 + \dots$$
+	$$M = D1 + \underbrace{(1 - rr) D1}_{\text{création monétaire banque A}} + (1 - rr) D2 + (1 - rr) D3 + \dots$$
 		
 	C'est une série géométrique de la forme $1 + x + x^2 + \dots$. Si $\vert x \vert < 1$, alors $1 + x + x2 + \dots = \frac{1}{1 - x}$. $x = (1 - rr)$, donc $M = \frac{1}{rr} D1$.
 	
@@ -280,7 +280,7 @@ On a l'offre de monnaie ($M$), les billets et pièces en circulation ($C$) et ob
 	
 	On a
 	\begin{itemize}
-		\item La demande de monnaie : $ M^d = P\times L (Y, i)$. $L$ est la fonction de demande de liquidité. Si $Y$ est constant, $M = P\times Y\times L(i)$
+		\item La demande de monnaie : $ M^d = P\times L (Y, i)$. $L$ est la fonction de demande de liquidité. Si $Y$ est constant, $M^d = P\times Y\times L(i)$
 	
 		\item La demande d'espèce : $E^d = c \times M^d$. $c$ est la part de la demande de monnaie sous forme d'espèce.
 	
@@ -297,7 +297,7 @@ On a l'offre de monnaie ($M$), les billets et pièces en circulation ($C$) et ob
 	
 	Donc
 	
-	$$H = c M^D + (1 - c) \Theta M^d) = (c + (1 - c) \Theta) P . Y . L(i)$$
+	$$H = c M^d + (1 - c) \Theta M^d = (c + (1 - c) \Theta) P . Y . L(i)$$
 	
 	Si $c = 1$, $E^d = M^d$ et $H = P . Y . L(i)$, l'ensemble de la monnaie est détenue sous forme de billets ; l'offre de monnaie est entièrement contrôlée par la BC.
 	
@@ -319,7 +319,7 @@ On a l'offre de monnaie ($M$), les billets et pièces en circulation ($C$) et ob
 	
 	\dessinS{schema_eonia2}{.4}
 	
-	\subsubsection{Offre et la demande de monnaie et le multiplicateur monétaire}
+	\subsubsection{L'offre et la demande de monnaie et le multiplicateur monétaire}
 	
 	On sait que l'offre de monnaie BC est $H = (C + ( 1 - c) \Theta) P \times Y \times  L(i)$. On a que 
 	
@@ -347,16 +347,16 @@ On a l'offre de monnaie ($M$), les billets et pièces en circulation ($C$) et ob
 	
 	\begin{itemize}
 		\item Déréglementation : assouplissement des règles, taux libres et ouverture à la concurrence internationale. Les capitaux peuvent circuler et les prix sont libres.
-		\item Décloisonnement : "tout le monde peut faire tout ce qu'il veut". Les banques n'ont plus le monopole de collecte des dépôts (si l'argent est placé ailleurs de dans une banque, ce n'est plus de la monnaie mais un titre).
-		\item Désintermédiation :  les entreprises peuvent se financer directement sur le marché financier, auprès des épargnants ; le système bancaire est court-court-circuité. Il y a un changement qualitatif des actifs bancaires ; il y a moins de grandes entreprises et plus de crédit immobilier.
+		\item Décloisonnement : "tout le monde peut faire tout ce qu'il veut". Les banques n'ont plus le monopole de collecte des dépôts (si l'argent est placé ailleurs dans une banque, ce n'est plus de la monnaie mais un titre).
+		\item Désintermédiation :  les entreprises peuvent se financer directement sur le marché financier, auprès des épargnants ; le système bancaire est court-circuité. Il y a un changement qualitatif des actifs bancaires ; il y a moins de grandes entreprises et plus de crédit immobilier.
 	\end{itemize}
 	
 	Les banques sont attaquées (moins de dépôts, plus de concurrence et les taux diminuent) et ne gagnent presque plus sur le long terme (la marge d'intérêt est faible, les profits baissent). Elles vont alors jouer sur le court terme et entrer dans la spéculation. Elles vont acheter et revendre des actifs sur leur propre compte ou ceux de clients.
 	
-	Il y a plus de concurrence mais l'instabilité financière est introduire au coeur des banques.
+	Il y a plus de concurrence mais l'instabilité financière est introduite au coeur des banques.
 	
 	1987 : crach boursier, retour de réglementation (Basel I, II, III) mais différente : la concurrence est gardée mais la réglementation est adaptée aux les actifs.
 	
 	Nouveaux produits financiers grâce aux innovations technologiques, qui renforcent également cet effet sur les banques.
 	
-	Il y a plus de concurrence et plus d'instabilité poussent aux marchés dérivés, où on échange du risque.
+	Il y a plus de concurrence et plus d'instabilité poussent aux marchés dérivés, où on échange un produit risqué pour un produit à risque plus faible.
